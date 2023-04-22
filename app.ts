@@ -25,7 +25,6 @@ app.use(morgan);
 app.use(minify);
 
 app.use("/", require(`${__dirname}/routes/map.ts`));
-// app.use('/', require(`${__dirname}/routes/post.ts`));
 
 http.createServer(app).listen(process.env.PORT, (req: any, res: any) => {
   console.log(`mode: ${process.env.ENV}, port: ${process.env.PORT}.`);
