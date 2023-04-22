@@ -2,8 +2,8 @@
   let express = require('express');
   let router = express.Router();
 
-  // router.put('/', require("./post/index"));
-  // router.put('*', require(`./404`));
+  router.put("/updated", require("./updated"));
+  // router.put("*", require("./404"));
 
   module.exports = router;
 })();
